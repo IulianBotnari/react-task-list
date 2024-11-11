@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import AppHeader from '../Components/AppHeader'
+
 import './App.css'
 
 function App() {
@@ -7,7 +9,7 @@ function App() {
 
   return (
     <>
-
+      <AppHeader />
     </>
   )
 }
