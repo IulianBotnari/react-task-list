@@ -9,3 +9,27 @@
     padding: 1rem;
     background-color: aquamarine;
 }
+
+
+.d_flex {
+    display: flex;
+}
+
+.badge {
+    padding: .2rem;
+    background-color: orange;
+    color: white;
+}
+
+ul {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    list-style-type: none;
+
+}
+
+li {}
+
+section {
+    margin: 2rem 1rem;
+}

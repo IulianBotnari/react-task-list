@@ -80,6 +80,7 @@ export default function AppMainComplitedTask() {
     })
 
     console.log(tasksCompleted);
+    const returnIndex = tasksCompleted.length
 
 
 
@@ -89,12 +90,12 @@ export default function AppMainComplitedTask() {
     return (
         <>
             <section>
-                <h3>Complited Task</h3>
-                <div className="d_flex">
+                <h3>Completed Task ({returnIndex})</h3>
+                <div>
 
 
                     {tasksCompleted.map(task =>
-                        <>
+                        <div className="d_flex">
                             <ul>
 
                                 <li><h5>{task.title}</h5></li>
@@ -103,9 +104,9 @@ export default function AppMainComplitedTask() {
 
 
                             </ul>
-                            <div>{task.state}</div>
+                            <div><div className="badge">{task.state}</div></div>
 
-                        </>
+                        </div>
 
                     )}
                 </div>

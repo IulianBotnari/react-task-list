@@ -79,8 +79,11 @@ export default function AppMainCurrentTask() {
         return task.state !== "completed"
     })
 
-    console.log(tasksNotCompleted);
 
+
+    const returnIndex = tasksNotCompleted.length
+
+    console.log(returnIndex);
 
 
 
@@ -89,12 +92,12 @@ export default function AppMainCurrentTask() {
     return (
         <>
             <section>
-                <h3>Current task</h3>
-                <div className="d_flex">
+                <h3>Current task({returnIndex})</h3>
+                <div>
 
 
                     {tasksNotCompleted.map(task =>
-                        <>
+                        <div className="d_flex">
                             <ul>
 
                                 <li><h5>{task.title}</h5></li>
@@ -103,9 +106,9 @@ export default function AppMainCurrentTask() {
 
 
                             </ul>
-                            <div>{task.state}</div>
+                            <div><div className="badge">{task.state}</div></div>
 
-                        </>
+                        </div>
 
                     )}
                 </div>
