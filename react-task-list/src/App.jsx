@@ -1,7 +1,8 @@
 import { useState } from 'react'
 
 import AppHeader from '../Components/AppHeader'
-import AppMain from '../Components/AppMain'
+import AppMainCurrentTask from '../Components/AppMainCurrentTask'
+import AppMainComplitedTask from '../Components/AppMainComplitedTask'
 
 import './App.css'
 
@@ -11,7 +12,8 @@ function App() {
   return (
     <>
       <AppHeader />
-      <AppMain />
+      <AppMainCurrentTask />
+      <AppMainComplitedTask />
     </>
   )
 }
